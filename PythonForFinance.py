@@ -131,7 +131,7 @@ if __name__ == "__main__":
     # plt.title("CAPM")
     # plt.show()
 
-    portfolios_data = generate_portfolios(100000, annualised_ret, returns.cov(), nb_days)
+    portfolios_data = generate_portfolios(1000000, annualised_ret, returns.cov(), nb_days)
     # plot_efficient_frontier(portfolios_data)
 
     max_portfolio = portfolios_data.loc[portfolios_data['sharpe'].idxmax()]
